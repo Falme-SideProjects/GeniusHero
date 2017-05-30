@@ -1,0 +1,86 @@
+html, body{
+	overflow: hidden;
+}
+
+#score{
+
+}
+
+#genius{
+	width:200px;
+	height:200px;
+	position: absolute;
+	top:300px;
+	left:300px;
+}
+
+#Btn1, #Btn2, #Btn3, #Btn4{
+	width:100px;
+	height:100px;
+	position: absolute;
+}
+
+#Btn1, #Btn2{ top:0; }
+#Btn3, #Btn4{ bottom:0; }
+#Btn1, #Btn3{ left:0; }
+#Btn2, #Btn4{ right:0; }
+
+.redBlock, .greenBlock, .blueBlock, .purpleBlock{
+	position:absolute;
+	width:100px;
+	height:100px;
+}
+
+.redBlock{
+	left:-200px;
+	top:300px;
+}
+.greenBlock{
+
+	left:400px;
+	top:-200px;
+}
+.blueBlock{
+
+	left:1000px;
+	top:400px;
+}
+.purpleBlock{
+
+	left:300px;
+	top:1000px;
+}
+
+#GameOver, #Winner{
+	width:100vw;
+	height:100vh;
+	background-color: black;
+	position: absolute;
+	top:0;
+	left:0;
+	visibility: hidden;
+	color:red;
+	font-size:60px;
+	z-index: 1000;
+}
+
+#Winner{
+	background-color: yellow;
+	color:green;
+
+}
+
+#Btn1, .redBlock{background-color:red; border-radius: 50% 0 0 0;}
+#Btn2, .greenBlock{background-color:green; border-radius: 0 50% 0 0;}
+#Btn3, .purpleBlock{background-color:purple; border-radius: 0 0 0 50%;}
+#Btn4, .blueBlock{background-color:blue; border-radius: 0 0 50% 0;}
+
+
+
+.rightChord{
+	border: solid white;
+}
+
+.wrongChord{
+	border: solid black;
+}
